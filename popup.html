@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Manager</title>
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+<body>
+    <h1>Link Manager</h1>
+    <button id="add-link-button">Add Link</button>
+    <div id="link-form" style="display:none;">
+        <input type="text" id="link-title" placeholder="Title">
+        <input type="url" id="link-url" placeholder="URL">
+        <select id="link-category"></select>
+        <input type="text" id="new-category" placeholder="New Category">
+        <button id="save-link">Save Link</button>
+    </div>
+    <input type="text" id="search" placeholder="Search Links">
+    <div id="categories"></div>
+    <table id="links-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Link</th>
+                <th>Category</th>
+                <th>Date Added</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="popup.js"></script>
+</body>
+</html>
