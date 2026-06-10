@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "LinkSaver",
+  "version": "1.0",
+  "description": "Save, organize, and preview links with automatic thumbnails",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "LinkSaver"
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save to LinkSaver</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="save-body">
+  <div class="save-container">
+    <div class="save-header">
+      <h2>Save to LinkSaver</h2>
+      <button class="btn-ghost" id="cancelBtn">&times;</button>
+    </div>
+    <form id="saveForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter a name" required>
+      </div>
+      <div class="form-group">
+        <label for="url">URL</label>
+        <input type="url" id="url" placeholder="https://example.com">
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" placeholder="Add notes or description..." rows="3"></textarea>
+      </div>
+      <div id="previewArea" class="preview-area" style="display:none">
+        <label>Preview</label>
+        <div class="preview-box">
+          <img id="previewImage" src="" alt="preview">
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="button" class="btn-secondary" id="cancelFormBtn">Cancel</button>
+        <button type="submit" class="btn-primary">Save Link</button>
+      </div>
+    </form>
+  </div>
+  <script src="save.js"></script>
+</body>
+</html>
